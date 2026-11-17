@@ -1184,3 +1184,7 @@ main .xp-block .card-grid + p { margin-top: var(--space-5); }
 
 /* Row 84 (2026-11-12): in-page jumps to the quote form clear the sticky header */
 #estimate{scroll-margin-top:96px}
+/* row 312 live review feed block (tooling/lanes/zz_fixes7_reviews.py) */
+.rev-live { margin-top: var(--space-5, var(--space-6)); text-align: left; }
+.rev-live .rev-live-head { margin-bottom: var(--space-3); }
+.rev-live .rev-live-note { margin-top: var(--space-3); font-size: 14px; color: var(--c-4b5563); }
