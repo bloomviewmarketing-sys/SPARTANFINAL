@@ -1197,6 +1197,8 @@ main .xp-block .card-grid + p { margin-top: var(--space-5); }
   .bb-hero .form-card > .form-rating{order:4;margin-top: var(--space-3,var(--space-4))}
   .bb-hero .form-card > .form-review{order:5}
 }
+/* 2026-11-19 (sheet: clean on a phone screen): breadcrumb links get a 24px tap height (WCAG 2.2 target size minimum). */
+.crumbs a{display:inline-block;min-height:24px;line-height:24px}
 /* row 312 live review feed block (tooling/lanes/zz_fixes7_reviews.py) */
 .rev-live { margin-top: var(--space-5, var(--space-6)); text-align: left; }
 .rev-live .rev-live-head { margin-bottom: var(--space-3); }
