@@ -1187,6 +1187,16 @@ main .xp-block .card-grid + p { margin-top: var(--space-5); }
 /* 2026-11-19: the hero section carries the same photo as its drift layer (lane zz_fixes10_herobg). */
 .bb-hero[style*="url("]{background-size:cover;background-position:center}
 @media (max-width:767px){.bb-hero[style*="--bg-sm"]{background-image:var(--bg-grad),var(--bg-sm)!important}}
+/* 2026-11-19 (sheet: short form beside the H1, mobile half): on phones the hero form card shows its fields right
+   under the kicker and title; the rating strip and the review quote move below the fields. Desktop is unchanged. */
+@media (max-width:767px){
+  .bb-hero .form-card{display:flex;flex-direction:column}
+  .bb-hero .form-card > .form-kicker{order:1}
+  .bb-hero .form-card > .form-title{order:2}
+  .bb-hero .form-card > form{order:3}
+  .bb-hero .form-card > .form-rating{order:4;margin-top: var(--space-3,var(--space-4))}
+  .bb-hero .form-card > .form-review{order:5}
+}
 /* row 312 live review feed block (tooling/lanes/zz_fixes7_reviews.py) */
 .rev-live { margin-top: var(--space-5, var(--space-6)); text-align: left; }
 .rev-live .rev-live-head { margin-bottom: var(--space-3); }
