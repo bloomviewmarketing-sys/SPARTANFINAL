@@ -1202,3 +1202,6 @@ main .xp-block .card-grid + p { margin-top: var(--space-5); }
 .rev-live { margin-top: var(--space-5, var(--space-6)); text-align: left; }
 .rev-live .rev-live-head { margin-bottom: var(--space-3); }
 .rev-live .rev-live-note { margin-top: var(--space-3); font-size: 14px; color: var(--c-4b5563); }
+/* sheet 2026-11-23: source lines read as footnotes; before/after pairs stack on small phones */
+.bb-post-body .post-sources, .post-sources { font-size: .875rem; line-height: 1.5; }
+@media (max-width: 480px) { .job-pair { grid-template-columns: 1fr; } }
